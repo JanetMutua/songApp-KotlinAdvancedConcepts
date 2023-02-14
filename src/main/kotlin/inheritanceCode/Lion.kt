@@ -3,10 +3,14 @@ package inheritanceCode
 class lionKing( noTeeth:String, nameType:String): Animal(noTeeth, nameType){
     override val image = "myImage"
     override val food = "meat"
+    //abstract classes have to be overridden hence we use don't use an initializer block here although it is a var
+    override var habitat = "forest"
 
-    init {
-        habitat = "forest"
-    }
+
+    //overriding a property defined using var using an initializer block
+    //init {
+    //    habitat = "forest"
+    //}
 
     override fun makeNoise() {
         println("Roars!")

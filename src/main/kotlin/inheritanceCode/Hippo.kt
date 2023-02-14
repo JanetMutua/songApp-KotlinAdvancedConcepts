@@ -9,10 +9,14 @@ class Hippo(var teethCount:String, var animalName:String): Animal(teethCount, an
     override val image = "Jpg"
     override val food = "Grass"
 
-    //overriding a property defined using var
-    init {
-        habitat = "water"
-    }
+    //abstract classes have to be overridden hence we use don't use an initializer block here although it is a var
+    override var habitat = "water"
+
+
+    //overriding a property defined using var using an initializer block
+    //init {
+    //   habitat = "water"
+    //}
 
     override fun makeNoise() {
         println("Grunt!!")

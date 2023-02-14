@@ -2,6 +2,9 @@ package inheritanceCode
 
 class Vet{
     fun giveMedicine(animal: Animal){
+
+        //using polymorphism
+        //inherits the methods and properties of the Animal supertype
         println("${animal.makeNoise()}")
     }
 }

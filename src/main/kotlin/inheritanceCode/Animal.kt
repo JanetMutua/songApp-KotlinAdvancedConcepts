@@ -1,22 +1,16 @@
 package inheritanceCode
 
-open class Animal( var noTeeth:String, var name:String){
-    open val image = ""
-    open val food = ""
-    open var habitat = ""
+abstract class Animal( var noTeeth:String, var name:String){
+    abstract val image: String
+    abstract val food : String
+    abstract var habitat : String
     var hunger = 10
 
-    open fun makeNoise(){
-        println("Making noise")
-    }
+    abstract fun makeNoise()
 
-    open fun eat(){
-        println("Eating")
-    }
+    abstract fun eat()
 
-    open fun roam(){
-        println("Roaming")
-    }
+    abstract fun roam()
 
     fun sleep(){
         println("Sleeping")
