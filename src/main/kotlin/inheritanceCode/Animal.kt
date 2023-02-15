@@ -1,6 +1,6 @@
 package inheritanceCode
 
-abstract class Animal( var noTeeth:String, var name:String){
+abstract class Animal( var noTeeth:String, var name:String): Roamable{
     abstract val image: String
     abstract val food : String
     abstract var habitat : String
@@ -10,7 +10,7 @@ abstract class Animal( var noTeeth:String, var name:String){
 
     abstract fun eat()
 
-    abstract fun roam()
+    //abstract override fun roam()
 
     fun sleep(){
         println("Sleeping")
