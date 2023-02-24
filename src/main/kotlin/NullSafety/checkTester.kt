@@ -47,9 +47,12 @@ fun main(args:Array<String>){
     //ELvis operator
 
     wolfDiary()?.let { it.eat() } ?: -1
+    //==========================================================================****
+    //USING THROW IN EXCEPTION HANDLING AS AN EXPRESSION
+
+    var newWolfDiary = wolfDiary()?.name ?: throw IllegalArgumentException()
 
     //Not null assertion operator
-
     //var water = null
     //var z = water!!
 
