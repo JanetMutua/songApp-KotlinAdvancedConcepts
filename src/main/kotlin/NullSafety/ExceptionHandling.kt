@@ -10,7 +10,7 @@ fun main(args:Array<String>){
         setWorkRate(115)
     }catch (e: IllegalArgumentException){
         println(e.message)
-        
+
     }
 
     tryAsExpression("123")
