@@ -27,10 +27,13 @@ fun definingLambdaType(){
 }
 
 
-
-
-
-
+fun convertValues(
+    x:Double,
+    convert: (Double) -> Double
+):Double{
+    val result = convert(x)
+    return result
+}
 
 fun tryLambdaTricks(){
     val myLambda = {x:Int -> x + 5}
