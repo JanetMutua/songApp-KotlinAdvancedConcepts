@@ -22,6 +22,7 @@ fun similarityCheck(){
     println("${y === x}")
     println("${y == x}")
     println("${y === z}")
+    println("${z===x}")
 }
 
 fun mutableSetFunc(){

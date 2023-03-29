@@ -2,8 +2,8 @@ package Collections
 
 fun main(args:Array<String>){
 
-    //makeMaps()
-    designMutableMap()
+    makeMaps()
+    //designMutableMap()
 
 
 }
@@ -23,13 +23,13 @@ fun makeMaps(){
         "recipe_three" to r3
     )
 
-    println("My map contains recipe_one : ${myFoodMap.containsKey("recipe_one")}")
-    println("My map contains Chicken : ${myFoodMap.containsValue(r1)}")
+    //println("My map contains recipe_one : ${myFoodMap.containsKey("recipe_one")}")
+    //println("My map contains Chicken : ${myFoodMap.containsValue(r1)}")
 
 //    get and getValue
 
-    println("Find chicken: ${myFoodMap.getValue("recipe_one")}")
-    println("Find fish fillet: ${myFoodMap.get("recipe_three")}")
+    //println("Find chicken: ${myFoodMap.getValue("recipe_one")}")
+    //println("Find fish fillet: ${myFoodMap.get("recipe_three")}")
 
     for (recipe in myFoodMap){
         println("I am making ${recipe.key}")
@@ -38,6 +38,12 @@ fun makeMaps(){
     for ((key, value) in myFoodMap){
         println("This $key holds $value")
     }
+
+    myFoodMap.forEach{ print("This is a for each function mapping ${it.key} to ${it.value}, ")}
+    println()
+    println("Removing the last comma in the printed dictionary using a map() function")
+
+    println(myFoodMap.map { "${it.key} is in ${it.value} "}.joinToString(", "))
 }
 
 
