@@ -13,7 +13,8 @@ fun main(args:Array<String>){
 
     }
 
-    tryAsExpression("123")
+    tryAsExpression("ABC")
+
 }
 
 
@@ -32,7 +33,7 @@ fun myFunction(str:String){
 
 fun setWorkRate(rates:Int){
     if (rates !in 0..100){
-        throw IllegalArgumentException("Percentage not in range 0..100  $rates ")
+        throw IllegalArgumentException("Percentage not in range 0..100. Your input is $rates")
     }
 
 }
